@@ -24,7 +24,7 @@ $("#confPassword").on('keyup',function() {
 
 // Cuando se registre guardamos las cookies con su nombre y contraseña
 
-$("#signUp").click(function(){
+$("#reg").click(function(){
 		setCookie('nombre',$("input[name=nombre]").val());
 		setCookie('password',SHA256($("input.password").val()));
 	});
